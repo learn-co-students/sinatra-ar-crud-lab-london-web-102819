@@ -1,0 +1,9 @@
+<% if !@articles.blank? %>
+  <% for item in @articles %>
+    <h1><%= item.title %></h1>
+    <p><%= item.content%></p>
+  <% end %>
+<% else%>
+    <h1> Add Some Content Buddy</h1>
+    <a href="/articles/new">Add New</a>
+<% end%>
